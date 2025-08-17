@@ -1,8 +1,9 @@
-namespace GestaoDeLivraria.Entities;
+using GestaoDeLivraria.Entities;
 
-public class Book
+namespace GestaoDeLivraria.Communication.Requests;
+
+public class RequestRegisterBookJson
 {
-  public Guid Id { get; set; } = Guid.Empty;
   public string Title { get; set; } = string.Empty;
   public string Author { get; set; } = string.Empty;
   public Genre Genre { get; set; }
